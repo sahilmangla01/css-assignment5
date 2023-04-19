@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    height: 690px;
+    background-image: url(./Images/sky.jpg);
+    border: 10px solid;
+    border-color: white green white orange;
+    
+}
+
+h1{
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+}
+span:first-child{
+    background-color: orange;
+}
+span:nth-child(2){
+    background-color: white;
+}
+span:nth-child(3){
+    background-color: green;
+}
+.city{
+    width: 1520px;
+    height: 300px;
+    background-image: url(./Images/city.png);
+    position: absolute;
+    bottom: 150px;
+    animation: road 20s infinite linear;
+   
+   
+}
+.road{
+    width: 1517px;
+    height: 200px;
+    position: absolute;
+    bottom: 15px;
+    animation: road 10s  linear infinite;
+    background-image: url(./Images/road.jpg);
+    
+    
+}
+.car_element{
+    position: absolute;
+    top: 100px;
+    
+
+}
+.car{
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 350px;
+    left: 600px;
+    z-index: 1;
+    background-image: url(./Images/car.png);
+    background-size: cover;
+    animation: car 2s infinite linear;
+}
+.wheel{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    animation: wheels 10s infinite linear;
+}
+.wheel1{
+    top: 430px;
+    left: 635px;
+    background-image: url(./Images/wheel.png);
+    background-size: cover;
+    
+}
+.wheel2{
+    top: 430px;
+    left: 853px;
+    background-image: url(./Images/wheel.png);
+    background-size: cover;
+}
+
+.flag{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 330px;
+    left: 848px;
+    z-index: 1;
+    background-image: url(./Images/Tiranga1.svg);
+    background-size: cover;
+}
+.sun{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 100px;
+    background-image: url(./Images/sun.png);
+    background-size: cover;
+    animation: sun 20s infinite linear;
+}
+
+@keyframes wheels{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(2000deg);
+    }
+}
+@keyframes road{
+    0%{
+        background-position-x: 5000px;
+    }
+    100%{
+        background-position-x: 2px;
+    }
+}
+@keyframes city{
+    0%{
+        background-position-x: 5000px;
+    }
+    100%{
+        background-position-x: 2px;
+    }
+}
+@keyframes sun{
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(-300px);
+    }
+}
+@keyframes car{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
